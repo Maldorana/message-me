@@ -1,3 +1,23 @@
 @import "semantic-ui";
 @import "semantic-ui/collections/menu";
 
+.ui.primary.button {
+    background-color: #00B5AD !important;
+}
+
+.ui.container > .item.teal:hover,
+.ui.container > .item.teal:active {
+    color: #00B5AD !important;
+}
+
+.right.menu > .item.teal:hover {
+    color: #00B5AD !important;
+}
+
+.chatbox {
+    height: 450px;
+}
+
+.ui.icon.buttons .button, .ui.icon.button {
+    padding: 0.78571429rem 1rem 0.78571429rem 0.78571429rem !important;
+}
