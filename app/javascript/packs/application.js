@@ -14,3 +14,5 @@ ActiveStorage.start()
 
 import 'jquery'
 import 'semantic-ui-sass'
+
+$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
