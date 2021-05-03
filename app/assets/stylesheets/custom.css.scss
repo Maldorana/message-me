@@ -1,16 +1,40 @@
 @import "semantic-ui";
 @import "semantic-ui/collections/menu";
 
-.ui.primary.button {
+.nav-button {
     background-color: #00B5AD !important;
 }
 
-.ui.container > .item.teal:hover,
-.ui.container > .item.teal:active {
+#nav-item {
+    padding: 0.92857143rem 0 0.92857143rem 1.14285714em;
+}
+
+#nav-item::before {
+    background: white
+}
+
+#nav-dropdown::after {
+    position: absolute;
+    content: '';
+    top: 0%;
+    right: 0px;
+    height: 100%;
+    width: 1px;
+    background: rgba(34, 36, 38, 0.1);
+}
+
+.item.teal:hover,
+.item.teal:active {
     color: #00B5AD !important;
 }
 
-.right.menu > .item.teal:hover {
+.ui.menu .ui.dropdown .menu > .item:hover,
+.ui.menu .ui.dropdown .menu > .item:active {
+    color: #00B5AD !important;
+}
+
+.ui.menu .item:hover,
+.ui.menu .item:active {
     color: #00B5AD !important;
 }
 
@@ -33,4 +57,10 @@
 
 .ui.teal.big.button {
     opacity: 0.45;
+}
+
+i.icon.close::before {
+    position: relative;
+    right: 8px;
+    top: 2px;
 }
