@@ -7,10 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(username: "yoruichi", password: "password123")
-User.create(username: "kisuke", password: "password123")
-User.create(username: "kuukaku", password: "password123")
-User.create(username: "Yuushiro", password: "password123")
+Message.create(body: "So, how's it going?", user_id: 2)
+Message.create(body: "We need to talk", user_id: 1)
+Message.create(body: "That bad, huh?", user_id: 2)
+Message.create(body: "I'll see you tonight", user_id: 1)
+
+
 
 
 
