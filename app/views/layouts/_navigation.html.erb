@@ -1,8 +1,6 @@
 <div class="ui large menu">
   <div class="ui container">
-    <a class="item teal">
-      Chatroom
-    </a>
+    <%= link_to "Chatroom", root_path, class: "item teal" %>    
     <a class="item teal">
       Messages
     </a>
@@ -15,7 +13,7 @@
         </div>
       </div>
       <div class="item">
-          <div class="ui primary button">Sign Up</div>
+        <%= link_to "Log in", login_path, class: "ui primary button" %>
       </div>
     </div>
   </div>
