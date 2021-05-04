@@ -5,6 +5,12 @@
     background-color: #00B5AD !important;
 }
 
+@media only screen and (max-width: 767px) {
+    .ui.menu:not(.vertical) .item > .button {
+        margin-right: 1rem !important;
+    }
+}
+
 #nav-item {
     padding: 0.92857143rem 0 0.92857143rem 1.14285714em;
 }
@@ -47,7 +53,7 @@
 }
 
 #page-container {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
 
@@ -63,4 +69,28 @@ i.icon.close::before {
     position: relative;
     right: 8px;
     top: 2px;
+}
+
+.ui.placeholder.segment {
+    min-height: 28rem;
+    max-width: 30rem;
+}
+
+.ui.segment {
+    margin: 1rem auto;
+}
+
+.ui.placeholder.segment .column .button, .ui.placeholder.segment .column .field, .ui.placeholder.segment .column textarea, .ui.placeholder.segment .column > .ui.input {
+    max-width: 25rem;
+    width: 100%;
+}
+
+.ui.horizontal.divider {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ui.error.message.transition {
+    max-width: 30rem;
+    margin: auto;
 }
