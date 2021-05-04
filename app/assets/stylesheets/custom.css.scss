@@ -94,3 +94,8 @@ i.icon.close::before {
     max-width: 30rem;
     margin: auto;
 }
+
+#messages {
+    height: 15em;
+    overflow: auto;
+}
