@@ -72,6 +72,6 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # Uncomment if you wish to allow Action Cable access from any origin.
-  # config.action_cable.disable_request_forgery_protection = true
-  config.action_cable.allowed_request_origins = ['https://message-me-on-rails.herokuapp.com']
+  config.action_cable.disable_request_forgery_protection = true
+  # config.action_cable.allowed_request_origins = ['https://message-me-on-rails.herokuapp.com']
 end

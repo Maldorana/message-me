@@ -41,11 +41,11 @@
 
 .ui.menu .item:hover,
 .ui.menu .item:active {
-    color: #00B5AD !important;
+    color: #00B5AD;
 }
 
 .chatbox {
-    height: 450px;
+    height: 440px;
 }
 
 .ui.icon.buttons .button, .ui.icon.button {
@@ -53,7 +53,7 @@
 }
 
 #page-container {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -101,4 +101,33 @@ i.icon.close::before {
 #messages {
     height: 15em;
     overflow: auto;
+}
+
+.ui.icon.header .circular.icon {
+    font-size: 1.8em;
+}
+
+.ui.menu[class*="bottom fixed"] {
+    justify-content: center;
+    box-shadow: 0px -1px 2px 0 rgba(34, 36, 38, 0.1);
+    height: 4rem;
+}
+
+.ui.large.menu {
+    height: 4rem;
+}
+
+.ui.menu.footer .item {
+    color: grey;
+}
+
+.ui.menu.footer .item:hover,
+.ui.menu.footer .item:active {
+    background-color: white;
+    color: black;
+}
+
+
+.ui.menu.footer .item::before {    
+    content: none;
 }
