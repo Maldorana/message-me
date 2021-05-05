@@ -22,10 +22,10 @@ window.scroll_bottom = function() {
 
 window.submit_message = function() {
     $('#message_body').on('keydown', function(e) {
-      if (e.keyCode == 13) {
-        $('button').click();
-        e.target.value = "";
-      };
+        if (e.keyCode == 13) {
+            $('button').click();
+            e.target.value = "";
+        };
     });
   };
 
@@ -36,6 +36,9 @@ $(document).on('turbolinks:load', function() {
     });
     scroll_bottom();
     submit_message();
-})
+    $(document).bind("ajax:beforeSend", function(){
+        $('#message_body').val('');
+    });    
+});
 
 
