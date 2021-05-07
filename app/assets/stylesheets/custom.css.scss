@@ -34,6 +34,18 @@
     color: #00B5AD !important;
 }
 
+.item.teal > .ui.left.pointing.label::before {
+    content: none;
+}
+
+.item.teal:hover > .ui.left.pointing.label,
+.item.teal:active > .ui.left.pointing.label,
+.item.teal:hover > .ui.left.pointing.label::before,
+.item.teal:active > .ui.left.pointing.label::before {
+    background: #00B5AD !important;
+    content: '';
+}
+
 .ui.menu .ui.dropdown .menu > .item:hover,
 .ui.menu .ui.dropdown .menu > .item:active {
     color: #00B5AD !important;
@@ -130,4 +142,21 @@ i.icon.close::before {
 
 .ui.menu.footer .item::before {    
     content: none;
+}
+
+.ui.vertical.menu {
+    width: 100%;
+}
+
+#users-card {
+    background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 767px) {
+    .item > .ui.label {
+        visibility: hidden;
+    }
+    .ui.two.column.grid > .four.wide.column {
+        padding-left: 0 !important;
+    } 
 }

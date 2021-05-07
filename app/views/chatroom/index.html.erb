@@ -25,27 +25,15 @@
       </div>
     </div>
 
-    <div class="four wide column">
-      <div class="ui card fluid raised chatbox">
-        <div class="content">
-          <div class="ui vertical menu">
+    <div class="four wide column ">
+      <div class="ui card fluid raised chatbox" id="users-card">
+        <div class="ui vertical menu">
+          <% @users.each do |user| %>
             <a class="teal item">
-              User 1
-              <div class="ui teal left pointing label">1</div>
+              <%= user.username %>
+              <div class="ui left pointing label">1</div>
             </a>
-            <a class="item">
-              User 2
-              <div class="ui label">51</div>
-            </a>
-            <a class="item">
-              User 3
-              <div class="ui label">1</div>
-            </a>
-            <a class="item">
-              User 4
-              <div class="ui label">1</div>
-            </a>
-          </div>
+          <% end %>
         </div>
       </div>
     </div>
