@@ -1,24 +1,22 @@
-# README
+## MESSAGE ME
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A very simple chatbox application. Users can sign up, log in and chat with other users.
 
-Things you may want to cover:
+## APP DIRECT LINK
 
-* Ruby version
+[App live on Heroku](https://message-me-on-rails.herokuapp.com)
 
-* System dependencies
+## TECHNOLOGIES USED
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby
+* Ruby on Rails
+* Postgresql
+* bcrypt
+* Bootstrap
+* HTML5
+* CSS3
+* Javascript
+* jQuery
+* AJAX
+* Git
+* Heroku
